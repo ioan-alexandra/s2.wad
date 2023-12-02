@@ -1,0 +1,606 @@
+.light-theme {
+  --menu: white;
+  --menuFont: #424346;
+  --cards: #ffffff;
+  --mainBg: #edf2f6;
+  --fontColor: black;
+  --topNav: #4b4453;
+}
+
+.dark-theme {
+  --menu: #424346;
+  --menuFont: white;
+  --cards: #333333;
+  --mainBg: #1a1a1a;
+  --fontColor: #e6e6e6;
+  --topNav: #4b4453;
+}
+* {
+  transition: background-color 0.6s ease, color 1s ease;
+}
+
+.fields{
+  position: relative;
+float: left;
+width: 50%;
+left: 10%;
+
+}
+.fields input{
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+.fields button{
+
+  padding: 6px 10px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+.pf {
+float: right;
+
+}
+
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--mainBg);
+}
+a {
+  text-decoration: none;
+  color: var(--fontColor);
+  cursor: pointer;
+}
+.a-left {
+  position: relative;
+  float: left;
+  width: 50%;
+  left: 15%;
+}
+
+/* Right column */
+.a-right {
+  position: relative;
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.a-card {
+  background-color: var(--cards);
+  padding: 20px;
+  margin-top: 20px;
+  color: var(--fontColor);
+}
+
+.a-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.a-search-bar input[type="text"] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+.a-search-bar button {
+  padding: 6px 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+a.icon {
+  display: none !important;
+  color: var(--menu);
+  background-color: var(--fontColor);
+}
+.y-Left-Info {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.y-Log-In {
+  border: solid gray 2px;
+  color: black;
+  padding: 5%;
+  height: 50%;
+  border-radius: 1em;
+  background-color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.y-Log-In #a-submit {
+  background-color: rgb(132, 94, 194);
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  font-size: 1.3em;
+  text-align: center;
+}
+.y-Log-In .a-register {
+  text-align: center;
+  text-decoration: none;
+  color: #d13a28;
+}
+
+.y-Log-In #a-submit:hover {
+  background-color: white;
+  color: rgb(132, 94, 194);
+  border: 3px solid rgb(132, 94, 194);
+}
+
+.vl {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 70%;
+  border-left: 2px double gray;
+  transform: translate(-50%);
+}
+
+.y-Personal_Info {
+  background-color: var(--cards);
+  color: var(--fontColor);
+  padding: 20px;
+  margin-top: 20px;
+}
+.current_Info input {
+  margin-bottom: 10px;
+  border-radius: 1em;
+}
+  
+#myForm {
+  padding: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.a-button-style {
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #d13a28 !important;
+  border: none;
+  color: white !important;
+  padding: 0.7em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px !important;
+  margin: 4px 2px;
+  transition-duration: 0.4s !important;
+  width: 100%;
+  cursor: pointer;
+}
+
+.a-button-style:hover {
+  background-color: white !important;
+  border: 3px solid #d13a28 !important;
+  color: #d13a28 !important;
+  cursor: pointer;
+}
+
+.a-image-box {
+  background: linear-gradient(rgb(132, 94, 194, 0.75), rgb(132, 94, 194, 0.75)),
+  url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_829578104_200013331653767174292_382164.jpg) center center;
+  color: white;
+  
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 30%;
+}
+
+.y-Log-In label {
+  color: black;
+  font-size: 1.6em;
+  margin-right: 5%;
+}
+
+.y-Log-In input {
+  margin-right: 5%;
+  margin-bottom: 5%;
+  font-size: 1.5em;
+  border: 1px solid rgb(107, 107, 107);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.y-Log-In input:focus {
+  outline: none;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+.fa,.fas  {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.main-menu:hover,
+nav.main-menu.expanded {
+  width: 250px;
+  overflow: visible;
+  transition: width 1s;
+}
+
+.main-menu {
+  background: var(--menu);
+  border-right: 1px solid #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  width: 60px;
+  overflow: hidden;
+  transition: width 1s;
+  z-index: 9000;
+}
+
+.main-menu ul {
+  margin: 7px 0;
+}
+
+.main-menu li {
+  position: relative;
+  display: block;
+  width: 250px;
+}
+
+.main-menu li a {
+  margin-bottom: 15%;
+  position: relative;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: var(--menuFont);
+  font-family: arial;
+  font-size: 14px;
+  margin-top: 15%;
+  text-decoration: none;
+  transition: width 0.1s;
+}
+
+.main-menu .nav-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 190px;
+}
+
+.main-menu ul.logout {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+nav ul,
+nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li:hover a,
+nav.main-menu li.active a {
+  color: rgb(132, 94, 194, 0.75);
+}
+#myMenu {
+  position: fixed;
+  height: 100%;
+  z-index: 9999 !important;
+}
+
+.topnav {
+  background-color: #4b4453;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  float: right;
+}
+.topnav .a-search-bar {
+  position: relative;
+  left: 16%;
+  padding: 3px 0 10px 0;
+  border: none;
+  font-size: 17px;
+}
+
+.a-new-post {
+  margin-top: 3%;
+  border: 2px solid #ccc;
+  border-radius: 0.3em;
+  padding: 8px;
+  display: flex;
+  background-color: var(--cards);
+}
+
+.a-new-post input {
+  height: 38px;
+  width: 100%;
+  margin-right: 8px;
+  border: 1px solid #edeff1;
+  background-color: #f6f7f8;
+  display: block;
+  outline: none;
+  padding: 0 16px;
+}
+
+.a-filter {
+  margin-top: 3%;
+  border: 2px solid #ccc;
+  border-radius: 0.3em;
+  padding: 6px;
+  padding-bottom: 3%;
+  overflow: overlay;
+  height: auto;
+  display: flex;
+  background-color: var(--cards);
+}
+
+.a-filter .all {
+  padding-right:1em;
+  border-right: 1px solid var(--fontColor);
+}
+
+.a-filter a {
+  text-decoration: none;
+  color: var(--fontColor);
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius: 1em;
+  background-color: var(--cards);
+  color: var(--fontColor);
+  margin: auto;
+  z-index: 9998 !important;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.createPost input,
+.createPost textarea,
+.createPost select {
+  width: 80%;
+  margin-right: 5%;
+  padding-left: 2%;
+  margin-bottom: 5%;
+  border-radius: 1em;
+  font-size: 1.5em;
+  border: 1px solid rgb(107, 107, 107);
+}
+.createPost input:focus,
+.createPost textarea:focus,
+.createPost select:focus {
+  outline: none;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.createPost button {
+  width: 50% !important;
+  border-radius: 1em;
+}
+
+.post-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.postFunctions {
+  float: right;
+}
+
+.postFunctions a {
+  text-decoration: none;
+  color: var(--fontColor);
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .main-menu {
+    display: none !important;
+  }
+  a.icon {
+    float: right;
+    padding-top: 1em;
+    display: block !important;
+    color: var(--menu);
+    background-color: var(--fontColor);
+  }
+}
+@media screen and (max-width: 600px) {
+  .a-row,
+  .a-right-contact input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .main-menu.responsive {
+    background: var(--menu);
+    width: auto !important;
+    display: block !important;
+    overflow: visible !important;
+    transition: width 1s !important;
+  }
+  .main-menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .a-left,
+  .a-right {
+    width: 100%;
+    padding: 0;
+    position: inherit;
+  }
+  .flex-item-right,
+  .flex-item-left {
+    flex: 100%;
+  }
+  .flex-container {
+    flex-direction: column;
+    padding-inline-start: 0px;
+  }
+  .y-Left-Info,
+  .y-Log-In {
+    position: inherit;
+    transform: none;
+  }
+  #myForm {
+    padding: 5%;
+    position: inherit;
+    transform: none;
+    height: auto;
+  }
+  .y-Log-In #a-submit {
+    padding: 0.5em;
+  }
+
+  .main-menu ul.logout {
+    position: initial;
+  }
+  .topnav .a-search-bar {
+    position: inherit;
+    padding: 3px 0 10px 0;
+    border: none;
+    font-size: 17px;
+  }
+  .Image {
+    position: inherit;
+  }
+  .a-left-contact {
+    width: 100% !important;
+  }
+  .a-right-contact {
+    width: 90% !important;
+    padding-left: 5%;
+  }
+}
+
+.a-right-contact input,
+.a-right-contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.a-right-contact input[type="submit"] {
+  background-color: var(--topNav);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.a-left-contact {
+  float: left;
+  position: relative;
+  left: 15%;
+  color: var(--fontColor);
+  width: 40%;
+}
+.a-right-contact {
+  float: left;
+  color: var(--fontColor);
+  position: relative;
+  width: 40%;
+}
+
+#contact {
+  padding-top: 15% !important;
+}
+i.fa.fa-thumbs-up, i.fa.fa-eye{
+  height: 3%;
+  width: 5%;
+}

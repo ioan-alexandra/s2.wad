@@ -1,0 +1,10 @@
+<?php $name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$formcontent="From: $name \n Message: $message";
+$recipient = "i429690@hera.fhict.nl";
+$subject = "Contact Form";
+$mailheader = "From: $email \r\n";
+mail('i429690@hera.fhict.nl', 'Testing email subject', 'Here you will put your email message');
+//mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "Thank You!";
